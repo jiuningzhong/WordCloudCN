@@ -64,15 +64,15 @@ if __name__ == '__main__':
 
     d = path.dirname(__file__) if "__file__" in locals() else os.getcwd()
     # 本地中文文本文件路径
-    zn_filePath = path.join(d,'xiaowangzi.txt') # 'C:\\Users\\Jiuning\\PycharmProjects\\WordCloudCN\\xiaowangzi.txt'
+    zn_filePath = path.join(d, 'resources', 'xiaowangzi.txt') # 'C:\\Users\\Jiuning\\PycharmProjects\\WordCloudCN\\resources\\xiaowangzi.txt'
     # 中文停用词文本路径
-    zn_StopWordPath = path.join(d,'zn_STOPWORDS.txt') # 'C:\\Users\\Jiuning\\PycharmProjects\\WordCloudCN\\zn_STOPWORDS.txt'
+    zn_StopWordPath = path.join(d, 'resources', 'zn_STOPWORDS.txt') # 'C:\\Users\\Jiuning\\PycharmProjects\\WordCloudCN\\resources\\zn_STOPWORDS.txt'
     # 词云图保存路径
-    imageSavePath = path.join(d,'wordcloud.png') # 'C:\\Users\\Jiuning\\PycharmProjects\\WordCloudCN\\wordcloud.png'
+    imageSavePath = path.join(d, 'resources', 'wordcloud.png') # 'C:\\Users\\Jiuning\\PycharmProjects\\WordCloudCN\\resources\\wordcloud.png'
     # 本地中文字体路径
-    zn_fontPath = path.join(d,'yahei.ttc') # 'C:\\Users\\Jiuning\\PycharmProjects\\WordCloudCN\\yahei.ttc'
+    zn_fontPath = path.join(d, 'resources', 'yahei.ttc') # 'C:\\Users\\Jiuning\\PycharmProjects\\WordCloudCN\\resources\\yahei.ttc'
     # 本地图片(最好是白底)路径
-    imagePath = path.join(d,'mask.jpg') # 'C:\\Users\\Jiuning\\PycharmProjects\\WordCloudCN\\girl.png'
+    imagePath = path.join(d, 'resources', 'mask.jpg') # 'C:\\Users\\Jiuning\\PycharmProjects\\WordCloudCN\\resources\\girl.png'
     # 中文词云图生成器
     zn_StopWordsList = txt2set(zn_StopWordPath)
     zn_wordcloudGenerater(zn_filePath, zn_fontPath, imagePath, imageSavePath, zn_StopWordsList, False)

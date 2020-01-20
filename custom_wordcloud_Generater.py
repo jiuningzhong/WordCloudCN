@@ -94,17 +94,17 @@ def txt2set(zn_StopWordPath):
 
 if __name__ == '__main__':
     # 本地英文文本文件路径
-    en_filePath = r'C:\Users\Jiuning\PycharmProjects\WordCloudCN\content.txt'
+    en_filePath = r'C:\Users\Jiuning\PycharmProjects\WordCloudCN\resources\content.txt'
     # 本地中文文本文件路径
-    zn_filePath = r'C:\Users\Jiuning\PycharmProjects\WordCloudCN\xiaowangzi.txt'
+    zn_filePath = r'C:\Users\Jiuning\PycharmProjects\WordCloudCN\resources\xiaowangzi.txt'
     # 本地中文字体路径
-    zn_fontPath = r'C:\Users\Jiuning\PycharmProjects\WordCloudCN\yahei.ttc'
+    zn_fontPath = r'C:\Users\Jiuning\PycharmProjects\WordCloudCN\resources\yahei.ttc'
     # 本地图片(最好是白底)路径
-    imagePath = r'C:\Users\Jiuning\PycharmProjects\WordCloudCN\girl.png'
+    imagePath = r'C:\Users\Jiuning\PycharmProjects\WordCloudCN\resources\girl.png'
     # 词云图保存路径
-    imageSavePath = r'C:\Users\Jiuning\PycharmProjects\WordCloudCN\wordcloud.png'
+    imageSavePath = r'C:\Users\Jiuning\PycharmProjects\WordCloudCN\resources\wordcloud.png'
     # 中文停用词文本路径
-    zn_StopWordPath = r'C:\Users\Jiuning\PycharmProjects\WordCloudCN\zn_STOPWORDS.txt'
+    zn_StopWordPath = r'C:\Users\Jiuning\PycharmProjects\WordCloudCN\resources\zn_STOPWORDS.txt'
     # 英文词云图生成器
     en_wordcloudGenerater(en_filePath, imagePath, imageSavePath, False)
     # 中文词云图生成器

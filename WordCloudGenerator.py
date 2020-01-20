@@ -23,15 +23,16 @@ def txt2set(zn_StopWordPath):
 
 d = path.dirname(__file__) if "__file__" in locals() else os.getcwd()
 
+
 # 本地中文文本文件路径
-zn_filePath = path.join(d,'xiaowangzi.txt') # 'C:\\Users\\Jiuning\\PycharmProjects\\WordCloudCN\\xiaowangzi.txt'
+zn_filePath = path.join(d, 'resources', 'xiaowangzi.txt') # 'C:\\Users\\Jiuning\\PycharmProjects\\WordCloudCN\\resources\\xiaowangzi.txt'
 # 中文停用词文本路径
-zn_StopWordPath = path.join(d,'zn_STOPWORDS.txt') # 'C:\\Users\\Jiuning\\PycharmProjects\\WordCloudCN\\zn_STOPWORDS.txt'
+zn_StopWordPath = path.join(d, 'resources', 'zn_STOPWORDS.txt') # 'C:\\Users\\Jiuning\\PycharmProjects\\WordCloudCN\\resources\\zn_STOPWORDS.txt'
 # 词云图保存路径
-imageSavePath = path.join(d,'wordcloud.png') # 'C:\\Users\\Jiuning\\PycharmProjects\\WordCloudCN\\wordcloud.png'
+imageSavePath = path.join(d, 'resources', 'wordcloud.png') # 'C:\\Users\\Jiuning\\PycharmProjects\\WordCloudCN\\resources\\wordcloud.png'
 # 本地中文字体路径
-zn_fontPath = path.join(d,'yahei.ttc') # 'C:\\Users\\Jiuning\\PycharmProjects\\WordCloudCN\\yahei.ttc'
-dic_path = path.join(d,'dict.txt.big.txt') # 'C:\\Users\\Jiuning\\PycharmProjects\\WordCloudCN\\dict.txt.big.txt'
+zn_fontPath = path.join(d, 'resources', 'yahei.ttc') # 'C:\\Users\\Jiuning\\PycharmProjects\\WordCloudCN\\resources\\yahei.ttc'
+dic_path = path.join(d, 'resources', 'dict.txt.big.txt') # 'C:\\Users\\Jiuning\\PycharmProjects\\WordCloudCN\\resources\\dict.txt.big.txt'
 
 zn_STOPWORDS = txt2set(zn_StopWordPath)
 stopwords = set(zn_STOPWORDS)
