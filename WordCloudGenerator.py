@@ -5,11 +5,11 @@ from wordcloud import WordCloud
 import jieba
 
 # 如果檔案內有一些編碼錯誤，使用 errors='ignore' 來忽略錯誤
-with open("cnword.txt", encoding="UTF-8", errors='ignore') as f:
+with open("cnword.txt", encoding="utf-8", errors='ignore') as f:
     text = f.read()
 
 # 設定使用 big5 斷詞
-jieba.set_dictionary('dict.txt.big')
+jieba.set_dictionary('C:\\Users\\Jiuning\\PycharmProjects\\WordCloudCN\\dict.txt.big.txt')
 wordlist = jieba.cut(text)
 words = " ".join(wordlist)
 
